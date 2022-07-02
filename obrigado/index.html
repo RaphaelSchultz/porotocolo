@@ -118,7 +118,27 @@
                 for (var b =
                     new Date, c = {}, d = Object.keys(a || {}), e = 0, f; f = d[e]; e++)if (a.hasOwnProperty(f) && "undefined" != typeof a[f]) try { var g = []; c[f] = JSON.stringify(a[f], function (h, k) { try { if ("function" !== typeof k) { if ("object" === typeof k && null !== k) { if (k instanceof HTMLElement || k instanceof Node || -1 != g.indexOf(k)) return; g.push(k) } return k } } catch (m) { } }) } catch (h) { } a = document.createEvent("CustomEvent"); a.initCustomEvent("TvtRetrievedVariablesEvent", !0, !0, { variables: c, date: b }); window.dispatchEvent(a)
             }; window.setTimeout(function () { tvt.captureVariables({ 'dataLayer.hide': (function (a) { a = a.split("."); for (var b = window, c = 0; c < a.length && (b = b[a[c]], b); c++); return b })('dataLayer.hide'), 'gaData': window['gaData'], 'dataLayer': window['dataLayer'] }) }, 2000);</script>
-</head>
+
+    <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '568950944896965');
+  fbq('track', 'TYP');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=568950944896965&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
+    </head>
 
 <body class="vsc-initialized">
     <div class="parallax-mirror"
